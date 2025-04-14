@@ -11,7 +11,7 @@ body
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: linear-gradient(#4ba9e9 0,#4ba9e9 50%,#fff 50%,#fff 100%);
+	background: linear-gradient(#4ba9e9 0,#4ba9e9 50%,#ff4D00 50%,#ff4D00 100%);
 	min-height: 100vh;
 }
 .card 
@@ -168,4 +168,84 @@ p
 	text-transform: uppercase;
 	font-weight: 600;
 	color: #4ba9e9;
+}
+.card .details1 
+{
+	position: absolute;
+	left: 0;
+	width: 300px;
+	height: 100%;
+	background: #FF4D00;
+	display: flex;
+	justify-content: center;
+	padding: 20px;
+	flex-direction: column;
+	transition: 0.5s ease-in-out;
+}
+.card:hover .details1 
+{
+	left: 300px;
+}
+.card .details1::before 
+{
+	content: '';
+	position: absolute;
+	left: 0px;
+	width: 0; 
+  height: 0; 
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid #fff;
+	z-index: 1;
+}
+.card .details1 h3 
+{
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 1.5em;
+	line-height: 1em;
+}
+.card .details1 h3 span 
+{
+	font-size: 0.65em;
+	font-weight: 300;
+	opacity: 0.85;
+	text-transform: none;
+}
+.card .details1 h4 
+{
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 0.9em;
+	line-height: 1em;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+.card .details1 h2 
+{
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 2em;
+}
+.card .details1 h2 sup 
+{
+	font-weight: 300;
+}
+.card .details1 h2 small 
+{
+	font-size: 0.75em;
+}
+.card .details1 a 
+{
+	display: inline-flex;
+	padding: 10px 25px;
+	background: #fff;
+	font-weight: 500;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 600;
+	color: #FF4D00;
 }
